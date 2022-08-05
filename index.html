@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Calculadora IMC</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Calculadora IMC</h1>
+        </header>
+
+        <div class="formulario">
+            <form id="formpacientes">
+                <div>
+                    <label for="apellido" class="formLabels">Apellido</label>
+                    <input id="apellido" name="apellido" type="text" placeholder="Apellido">
+                </div>
+
+                <div>
+                    <label class="formLabels" for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre">
+                </div>
+
+                <div>
+                    <label class="formLabels" for="edad">Edad</label>
+                    <input id="edad" name="edad" type="number" placeholder="Edad">
+                </div>
+
+                <div>
+                    <label class="formLabels" for="sexo">Género</label>
+                    <select id="sexo" name="sexo">
+                        <option value=""> - </option>
+                        <option value="F">Femenino</option>
+                        <option value="M">Masculino</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="formLabels" for="altura">Altura cm</label>
+                    <input id="alturaf" name="altura" type="number" placeholder="175">
+
+                    <label class="formLabels" for="peso">Peso Kg</label>
+                    <input id="pesof" name="peso" type="number" placeholder="72">
+                </div>
+
+                <div class="boton">
+                    <button>Guardar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="tabla">
+            <table id="tablaPacientes">
+                <tr>
+                    <th class="name">Apellido</th>
+                    <th class="name">Nombre</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>IMC</th>
+                    <th>Observación</th>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <img src="image/cropped-onlylogo-1.png">
+            <p class="copyrigth">Practica Profecionalizante I - Fernando Corvalan</p>
+            <p class="copyrigth">&copy Copyrigth IES Manuel Belgrano</p>
+        </footer>
+
+        <script type="text/javascript" src="js/imc-tablas.js"></script>
+
+        <!-- <script>
+            const formulario = document.getElementById("formpacientes");
+            
+            formulario.addEventListener("submit", function(event){
+                event.preventDefault();
+                let transactionFormData = new FormData(formulario)
+                
+                insertRowTransactionTable(transactionFormData);
+                form.rest;
+
+            })
+
+            function insertRowTransactionTable(transactionFormData){
+                let transactionTablaRef = document.getElementById("tablaPacientes")
+                let newRowRef = transactionTablaRef.insertRow(-1);
+
+                let newCellRef = newRowRef.insertCell(0);
+                newCellRef.textContent = transactionFormData.get("apellido");
+
+                newCellRef = newRowRef.insertCell(1);
+                newCellRef.textContent = transactionFormData.get("nombre");
+
+                newCellRef = newRowRef.insertCell(2);
+                newCellRef.textContent = transactionFormData.get("edad");
+
+                newCellRef = newRowRef.insertCell(3);
+                newCellRef.textContent = transactionFormData.get("sexo");
+
+                newCellRef = newRowRef.insertCell(4);
+                newCellRef.textContent = transactionFormData.get("altura");
+
+                newCellRef = newRowRef.insertCell(5);
+                newCellRef.textContent = transactionFormData.get("peso");
+
+                newCellRef = newRowRef.insertCell(6);
+                newCellRef.textContent = transactionFormData.get("imc");
+            }
+        </script> -->
+    </body>
+
+</html>
