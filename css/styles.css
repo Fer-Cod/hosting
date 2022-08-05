@@ -1,0 +1,117 @@
+*{
+    margin: 1px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+header {
+    background-color: teal;
+    padding: 15px;
+    margin-bottom: 0;
+}
+  
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.formulario{
+    margin-top: 0;
+    background-color: teal;
+    padding: 15px;
+}
+
+.tabla{
+    background-color: bisque;
+    margin: auto;
+    width: 90%;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#formpacientes {
+    margin: auto;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 3px solid blue;
+}
+
+.formLabels{
+    width: 100px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 10px;
+    justify-content: left;
+}
+
+input{
+    height: 25px;
+    
+}
+
+#alturaf, #pesof{
+    width: 50px;
+}
+
+button {
+    height: 25px;
+    margin: 15px;
+    
+    background-color: teal;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    color: black;
+} 
+
+.boton{
+    text-align: center;
+}
+
+th{
+    width: 70px;
+    height: 25px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+.name{
+    width: 250px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+footer{
+    
+    background-color: darkslategrey;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyrigth{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 10px;
+}
+
+  
